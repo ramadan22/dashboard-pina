@@ -26,8 +26,8 @@
   & > div:nth-child(2) {
     @apply mt-2;
 
-    & label {
-      @apply text-[#292929] font-light text-xs;
+    & span {
+      @apply text-[#292929] font-light text-[0.625rem];
 
       @include responsive(tablet) {
         @apply text-sm;
