@@ -23,7 +23,7 @@ const Footer = () => {
         <Image src={SipfImage} alt="" />
       </div>
       <div>
-        <label>Copyright © 2022 PT Pina Aplikasi Bersama</label>
+        <span>Copyright © 2022 PT Pina Aplikasi Bersama</span>
       </div>
     </div>
   );

@@ -41,8 +41,8 @@ const BuyConfirmation = ({ openConfirmation = false }: Props) => {
         </div>
         <div>
           <div className="leading-6 flex flex-col">
-            <label className="font-semibold text-center">Mohon cek kembali order kamu</label>
-            <label className="text-sm text-center text-[#9E9E9E]">No Order: PI213123123DHEX</label>
+            <span className="font-semibold text-center">Mohon cek kembali order kamu</span>
+            <span className="text-sm text-center text-[#9E9E9E]">No Order: PI213123123DHEX</span>
           </div>
           <div className="flex flex-col gap-y-2">
             <div className="flex flex-row justify-between items-center">

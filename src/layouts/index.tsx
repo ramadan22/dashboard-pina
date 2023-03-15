@@ -20,39 +20,37 @@ const Template = ({ children }: Props) => {
   const isOpen = useOpenSidebar((state: any) => state.isOpen);
   const closeBuying = useOpenBuy((state: any) => state.handleClose);
 
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     const body = document?.getElementById('other');
     const except = document?.getElementById('except');
 
-    body?.addEventListener("click", function () {
+    body?.addEventListener('click', () => {
       handleClose();
       closeBuying();
     }, false);
-    except?.addEventListener("click", function (ev) {
-        ev.stopPropagation(); // this is important! If removed, you'll get both alerts
+    except?.addEventListener('click', (ev) => {
+      ev.stopPropagation();
     }, false);
   }
 
   return (
-    <>
-      <div id="other" className={classes}>
+    <div id="other" className={classes}>
+      <div>
+        <Sidebar />
         <div>
-          <Sidebar />
+          <Header />
           <div>
-            <Header />
             <div>
-              <div>
-                {children}
-              </div>
+              {children}
             </div>
           </div>
         </div>
-        <Footer />
-        {isOpen && (
-          <div className="w-full h-full fixed z-10 inset-0" style={{ background: 'rgba(0,0,0,0.5)' }}></div>
-        )}
       </div>
-    </>
+      <Footer />
+      {isOpen && (
+        <div className="w-full h-full fixed z-10 inset-0" style={{ background: 'rgba(0,0,0,0.5)' }} />
+      )}
+    </div>
   );
 };
 

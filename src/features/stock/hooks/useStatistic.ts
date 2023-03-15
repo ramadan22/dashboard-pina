@@ -15,7 +15,7 @@ const useStatistic = () => {
     earning,
     Profitabilitas,
     solvabilitas,
-  }
+  };
 };
 
 export default useStatistic;

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import classNames from 'classnames/bind';
@@ -15,7 +14,7 @@ const Sidebar = () => {
   const isOpen: boolean = useOpenSidebar((state: any) => state.isOpen);
 
   const classes = cx(styles.wrap, {
-    [styles.open]: isOpen
+    [styles.open]: isOpen,
   });
 
   return (
@@ -27,10 +26,10 @@ const Sidebar = () => {
         {sidebarMenu.map((item) => (
           <div key={item.id}>
             <Link href={{}} passHref legacyBehavior>
-              <a className="text-[#9E9E9E]">
+              <span className="text-[#9E9E9E]">
                 <Icon type={item.icon} size="medium" />
-                <label>{item.text}</label>
-              </a>
+                <span>{item.text}</span>
+              </span>
             </Link>
           </div>
         ))}

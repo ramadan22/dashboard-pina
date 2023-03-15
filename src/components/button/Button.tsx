@@ -1,6 +1,6 @@
 import { FC, ButtonHTMLAttributes } from 'react';
-import { ISize, IVariant } from '@/types/globals';
 import classNames from 'classnames/bind';
+import { ISize, IVariant } from '@/types/globals';
 
 import styles from './Button.module.scss';
 

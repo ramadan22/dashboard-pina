@@ -8,7 +8,12 @@ interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   className?: string;
 }
 
-const Input: FC<Props> = ({ size = 'medium', fullWidth = false, className, ...rest }) => {
+const Input: FC<Props> = ({
+  size = 'medium',
+  fullWidth = false,
+  className,
+  ...rest
+}) => {
   const cx = classNames.bind(styles);
 
   const classes = cx(

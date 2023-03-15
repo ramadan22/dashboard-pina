@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames/bind';
 import { Button } from '@/components/button';
@@ -61,9 +60,9 @@ const Stock = () => {
               <BoxStatistic title={fundamental.title} data={fundamental.data} />
             </div>
             <div className="flex-grow flex flex-col gap-y-2">
-             <BoxStatistic title={earning.title} data={earning.data} />
-             <BoxStatistic title={Profitabilitas.title} data={Profitabilitas.data} />
-             <BoxStatistic title={solvabilitas.title} data={solvabilitas.data} />
+              <BoxStatistic title={earning.title} data={earning.data} />
+              <BoxStatistic title={Profitabilitas.title} data={Profitabilitas.data} />
+              <BoxStatistic title={solvabilitas.title} data={solvabilitas.data} />
             </div>
           </div>
         </div>
@@ -82,15 +81,15 @@ const Stock = () => {
           </div>
           <BoxLabely title="Dana yang tersedia" text="IDR 1.250.000" />
           <div className="flex flex-col gap-y-2">
-            <label className="text-[#9E9E9E] text-xs">Jumlah Lot</label>
+            <span className="text-[#9E9E9E] text-xs">Jumlah Lot</span>
             <Counter value={1} />
           </div>
           <div className="flex flex-col gap-y-2">
-            <label className="text-[#9E9E9E] text-xs">Harga Per Saham</label>
+            <span className="text-[#9E9E9E] text-xs">Harga Per Saham</span>
             <Counter value="IDR 1.000.000" />
           </div>
           <div className="border-t border-b border-gray-100 py-3 px-0.5">
-            <label className="text-[#9E9E9E] text-sm">Total Pembelian</label>
+            <span className="text-[#9E9E9E] text-sm">Total Pembelian</span>
           </div>
           <div className="flex flex-col">
             <Button text="Beli" size="large" onClick={() => handleOpenConf()} />

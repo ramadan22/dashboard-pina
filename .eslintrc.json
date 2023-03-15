@@ -45,7 +45,8 @@
       {
         "scss": "ignorePackages",
         "svg": "ignorePackages",
-        "json": "ignorePackages"
+        "json": "ignorePackages",
+        "png": "ignorePackages"
       }
     ],
     "react/jsx-filename-extension": [

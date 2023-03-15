@@ -1,7 +1,6 @@
 import { FC, ReactNode, ButtonHTMLAttributes } from 'react';
 import classNames from 'classnames/bind';
 import styles from './ButtonIcon.module.scss';
-import styleButton from '../Button.module.scss';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;

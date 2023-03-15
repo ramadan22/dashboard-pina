@@ -26,7 +26,8 @@ const InputAddon: FC<Props> = ({
     [styles.right]: addonPosition === 'right',
   });
 
-  const inputClasses = cx('Input',
+  const inputClasses = cx(
+    'Input',
     stylesInput.basic,
     stylesInput[`size__${size}`],
     {
