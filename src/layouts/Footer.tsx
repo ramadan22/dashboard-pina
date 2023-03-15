@@ -5,7 +5,7 @@ import styles from '@/assets/styles/Footer.module.scss';
 
 import OjkImage from '@/assets/images/ojk.png';
 import IdxImage from '@/assets/images/idx.png';
-import IdClearImage from '@/assets/images/idClear.png';
+import IdClearImage from '@/assets/images/idclear.png';
 import SipfImage from '@/assets/images/sipf.png';
 import KseiImage from '@/assets/images/ksei.png';
 
