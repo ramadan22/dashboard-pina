@@ -26,10 +26,10 @@ const Sidebar = () => {
         {sidebarMenu.map((item) => (
           <div key={item.id}>
             <Link href={{}} passHref legacyBehavior>
-              <span className="text-[#9E9E9E]">
+              <a className="text-[#9E9E9E] text-[0.625rem] flex flex-col justify-center">
                 <Icon type={item.icon} size="medium" />
                 <span>{item.text}</span>
-              </span>
+              </a>
             </Link>
           </div>
         ))}
