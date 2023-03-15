@@ -1,0 +1,73 @@
+@import '@/assets/styles/responsive.module.scss';
+
+.wrap {
+  @apply flex flex-row items-start gap-x-5 py-4;
+  
+  & > div:nth-child(1) {
+    @apply flex-1 flex flex-col gap-y-5 w-full py-4;
+
+    & > div:nth-child(2) > div:nth-child(2) {
+      @apply flex-col;
+
+      @include responsive(tablet) {
+        @apply flex-row;
+      }
+    }
+  }
+
+  & > div:nth-child(2) {
+    @apply w-full h-full bg-white hidden fixed inset-0 justify-center z-20;
+
+    &.open {
+      @apply flex;
+    }
+
+    @include responsive(tablet) {
+      @apply w-auto items-center;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    @include responsive(dekstop) {
+      @apply w-[380px] sticky flex;
+      background-color: transparent;
+    }
+
+    & > div {
+      @apply w-full bg-white py-2 px-5 flex flex-col gap-y-5 flex-none;
+
+      & > div:nth-child(1) {
+        @include responsive(tablet) {
+          @apply hidden;
+        }
+      }
+
+      & > div:nth-child(7) {
+        @apply w-full absolute inset-x-0 bottom-0 px-5 pb-5;
+
+        @include responsive(tablet) {
+          @apply static inset-0 p-0;
+        }
+      }
+
+      @include responsive(tablet) {
+        @apply w-auto h-auto rounded-xl py-5;
+      }
+
+      @include responsive(dekstop) {
+        @apply w-full h-auto rounded-xl;
+      }
+    }
+  }
+
+  & > div:nth-child(3).buttonBuy {
+    @apply fixed z-10 inset-y-0 right-0 my-auto mr-2 flex items-center;
+
+    & > button {
+      @apply bg-primary rounded-full shadow-xl border border-gray-50 flex items-center justify-center pt-[4px] w-[45px] h-[45px];
+    }
+  
+    @include responsive(dekstop) {
+      @apply hidden;
+    }
+  }
+}

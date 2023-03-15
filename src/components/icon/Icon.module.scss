@@ -1,0 +1,24 @@
+.basic {
+  @apply relative flex items-center justify-center;
+
+  & > svg {
+    @apply w-full h-full;
+  }
+
+  &.size {
+    &__small {
+      width: 20px;
+      height: 20x;
+    }
+  
+    &__medium {
+      width: 25px;
+      height: 25px;
+    }
+  
+    &__large {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

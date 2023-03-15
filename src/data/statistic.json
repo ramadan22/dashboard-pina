@@ -1,0 +1,111 @@
+{
+  "other": {
+    "title": "",
+    "data": [
+      {
+        "id": 1,
+        "title": "Market Cap",
+        "text": "86.682 B"
+      },
+      {
+        "id": 2,
+        "title": "P/E (Annualized)",
+        "text": "6.7"
+      },
+      {
+        "id": 3,
+        "title": "PBV",
+        "text": "1.51"
+      },
+      {
+        "id": 4,
+        "title": "Dividend Yield",
+        "text": "8.12%"
+      },
+      {
+        "id": 5,
+        "title": "52W High",
+        "text": "3.270"
+      },
+      {
+        "id": 6,
+        "title": "52W Low",
+        "text": "1.160"
+      }
+    ]
+  },
+  "fundamental": {
+    "title": "Fundamental",
+    "data": [
+      {
+        "id": 1,
+        "title": "Cash Equivalent",
+        "text": "25.859 B"
+      },
+      {
+        "id": 2,
+        "title": "Total Assets",
+        "text": "108.326 B"
+      },
+      {
+        "id": 3,
+        "title": "Total Liabilitas",
+        "text": "44.670 B"
+      },
+      {
+        "id": 4,
+        "title": "Total Equity",
+        "text": "59.065 B"
+      }
+    ]
+  },
+  "earning": {
+    "title": "Earning",
+    "data": [
+      {
+        "id": 1,
+        "title": "Earning Per Share (Annualized)",
+        "text": "416.70"
+      },
+      {
+        "id": 2,
+        "title": "Book Value Per Share",
+        "text": "1846.59"
+      }
+    ]
+  },
+  "profitabilitas": {
+    "title": "Profitabilitas",
+    "data": [
+      {
+        "id": 1,
+        "title": "Gross Profit Margin",
+        "text": "56.2%"
+      },
+      {
+        "id": 2,
+        "title": "Operating Profit Margin",
+        "text": "53.8%"
+      },
+      {
+        "id": 3,
+        "title": "Net Profit Margin",
+        "text": "36.1%"
+      },
+      {
+        "id": 4,
+        "title": "ROA",
+        "text": "12.3%"
+      },
+      {
+        "id": 5,
+        "title": "ROE",
+        "text": "22.6%"
+      }
+    ]
+  },
+  "solvabilitas": {
+    "title": "Solvabilitas",
+    "data": []
+  }
+}

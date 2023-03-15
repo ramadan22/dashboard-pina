@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "icon": "Home",
+    "text": "Home"
+  },
+  {
+    "id": 2,
+    "icon": "Invest",
+    "text": "Portfolio"
+  },
+  {
+    "id": 3,
+    "icon": "Search",
+    "text": "Search"
+  },
+  {
+    "id": 4,
+    "icon": "Timeline",
+    "text": "Order"
+  },
+  {
+    "id": 5,
+    "icon": "User",
+    "text": "Profile"
+  }
+]

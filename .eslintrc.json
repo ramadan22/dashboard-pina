@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "ts": true,
+      "tsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "warnOnUnsupportedTypeScriptVersion": true
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": ["off"],
+    "import/no-unresolved": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/jsx-indent": ["error", 2],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "scss": "ignorePackages",
+        "svg": "ignorePackages",
+        "json": "ignorePackages"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".tsx",
+          ".ts"
+        ]
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "react/require-default-props": [
+      "error", {
+        "ignoreFunctionalComponents": true
+      }
+    ]
+  }
+}

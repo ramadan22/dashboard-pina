@@ -1,0 +1,50 @@
+@import '@/assets/styles/responsive.module.scss';
+
+.wrap {
+  @apply w-full h-full fixed hidden inset-0 z-50 justify-center items-center;
+  background-color: rgba(0,0,0,0.5);
+
+  &.open {
+    @apply flex;
+  }
+
+  & > div {
+    @apply w-full h-full bg-white py-5;
+
+    @include responsive(tablet) {
+      @apply w-auto h-auto bg-transparent py-0;
+    }
+  }
+
+  & > div > div:nth-child(1) {
+    @apply w-full flex justify-start px-5 py-1 mb-5;
+
+    @include responsive(tablet) {
+      @apply hidden;
+    }
+  }
+
+  & > div > div:nth-child(3) {
+    @apply w-full h-full bg-white p-5 rounded-2xl flex flex-col gap-y-5;
+
+    @include responsive(tablet) {
+      @apply w-[376px];
+    }
+
+    & > div:nth-child(2) {
+      @apply h-full;
+  
+      @include responsive(tablet) {
+        @apply h-auto;
+      }
+      
+      & > div:last-child {
+        @apply mt-auto;
+  
+        @include responsive(tablet) {
+          @apply mt-0;
+        }
+      }
+    }
+  }
+}

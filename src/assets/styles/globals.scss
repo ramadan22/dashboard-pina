@@ -1,0 +1,25 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url('../../assets/font/gotham-rounded/GothamRoundedMedium_21022.ttf');
+}
+
+@layer base {
+  body {
+    font-family: 'Gotham Rounded';
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}

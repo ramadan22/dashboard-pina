@@ -1,0 +1,11 @@
+.basic {
+  @apply w-full border rounded-lg flex flex-row justify-between p-3 gap-x-2;
+
+  & input {
+    @apply flex-1 w-full text-center outline-none font-semibold;
+  }
+
+  & button {
+    @apply text-primary;
+  }
+}

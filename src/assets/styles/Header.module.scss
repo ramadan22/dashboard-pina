@@ -1,0 +1,91 @@
+@import './responsive.module.scss';
+
+.wrap {
+  @apply flex flex-wrap bg-white justify-between items-center shadow z-10 gap-5 py-4 px-8;
+
+  @include responsive(tablet) {
+    @apply flex-row;
+  }
+
+  @include responsive(tablet_l) {
+    @apply px-6;
+  }
+
+  & > div:nth-child(1) {
+    @apply flex -order-last pr-5;
+
+    @include responsive(tablet_l) {
+      @apply order-none w-auto;
+    }
+
+    @include responsive(tablet_large) {
+      @apply hidden;
+    }
+  }
+
+  & > div:nth-child(2) {
+    @apply w-full hidden;
+
+    &.open {
+      @apply block z-10;
+    }
+
+    @include responsive(tablet) {
+      @apply w-1/2;
+    }
+
+    @include responsive(tablet_l) {
+      @apply w-[380px] block;
+    }
+  }
+
+  & > div:nth-child(3) {
+    @apply flex-1 w-full hidden justify-around border py-2 rounded-xl gap-x-5 px-5;
+
+    &.open {
+      @apply flex z-10;
+    }
+
+    @include responsive(tablet) {
+      @apply w-1/2 gap-x-10 px-0 border-none py-0;
+    }
+
+    @include responsive(tablet_l) {
+      @apply w-auto justify-start gap-x-20 flex;
+    }
+
+    & > div:nth-child(2) {
+      @include responsive(tablet) {
+        @apply hidden;
+      }
+    }
+  }
+
+  & > div:nth-child(4) {
+    @apply flex order-first w-1/2 items-center justify-end px-5;
+
+    @include responsive(tablet) {
+      @apply justify-start;
+    }
+
+    @include responsive(tablet_l) {
+      @apply order-none w-auto pb-0 px-0;
+    }
+
+    & > div {
+      @apply flex w-full justify-between gap-x-5;
+
+      @include responsive(tablet_large) {
+        @apply ml-auto w-auto;
+      }
+    }
+  }
+
+  & > div:nth-child(5) {
+    @apply flex -order-last pr-5;
+
+    @include responsive(tablet_l) {
+      @apply order-none w-auto hidden;
+    }
+  }
+}
